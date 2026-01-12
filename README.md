@@ -120,3 +120,35 @@ Releases/
 ## License
 
 Apache 2.0. See `LICENSE`.
+
+---
+
+## Inverted Index Script (Post-processing)
+
+This repo includes a helper script to build inverted indexes from a CSV exported
+by the plugin. It is intended for offline analysis and is not bundled in the
+plugin package.
+
+Location: `dcmtag2table-Horos-Plugin/python_script/build_inverted_index.py`
+
+Inputs:
+- `--csv`: plugin CSV export
+- `--tags-file`: text file with one DICOM tag keyword per line (must match CSV header)
+- `--output-dir`: directory for JSON output
+
+Outputs:
+- One JSON per tag, mapping `<tag value> -> [StudyInstanceUIDs...]`
+- `index.json` mapping each JSON filename to the list of keys (unique tag values)
+
+Example:
+
+```bash
+python3 dcmtag2table-Horos-Plugin/python_script/build_inverted_index.py \
+  --csv ~/dcmtag2table-output/dcmtag2table_YYYYMMDD_HHMMSS.csv \
+  --tags-file ~/dcmtag2table-output/tags.txt \
+  --output-dir ~/dcmtag2table-output/indexes
+```
+
+Notes:
+- The only index key used is `StudyInstanceUID` (not `SeriesInstanceUID`).
+- Missing values (empty, `Not found`, etc.) are skipped. Add more via `--missing-token`.
