@@ -1,0 +1,69 @@
+name: Bug Report
+description: Report a bug or unexpected behavior
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue! Please fill out the details below.
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have searched existing issues and this is not a duplicate.
+          required: true
+        - label: I am using a supported platform (Horos or OsiriX on macOS).
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug description
+      description: Clearly describe what went wrong.
+      placeholder: "What did you expect to happen? What actually happened?"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click '...'
+        3. Choose 'Plugins > Database > dcmtag2table'
+        4. See error...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: |
+        Provide details about your environment.
+      value: |
+        - Plugin version: (e.g., from Releases/)
+        - macOS version:
+        - Horos/OsiriX version:
+        - Python version (if relevant):
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console logs / error output
+      description: Paste any relevant logs from Xcode or application console.
+      render: plain text
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Any other details or screenshots.
