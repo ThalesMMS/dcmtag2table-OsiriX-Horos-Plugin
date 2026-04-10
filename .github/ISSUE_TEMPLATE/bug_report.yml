@@ -60,10 +60,18 @@ body:
     id: logs
     attributes:
       label: Console logs / error output
-      description: Paste any relevant logs from Xcode or application console.
+      description: >-
+        Do not include PHI/PII. Paste only redacted logs from Xcode or application console.
+        If logs may contain sensitive information, use the
+        [private reporting process](https://github.com/ThalesMMS/dcmtag2table-OsiriX-Horos-Plugin/security/policy)
+        before sharing.
       render: plain text
   - type: textarea
     id: notes
     attributes:
       label: Additional context
-      description: Any other details or screenshots.
+      description: >-
+        Do not include PHI/PII. Add only redacted details or screenshots. If screenshots,
+        logs, or examples may contain sensitive information, use a private channel or email via the
+        [private reporting process](https://github.com/ThalesMMS/dcmtag2table-OsiriX-Horos-Plugin/security/policy)
+        before sharing.

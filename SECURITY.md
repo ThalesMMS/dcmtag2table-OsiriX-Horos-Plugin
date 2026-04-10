@@ -7,7 +7,13 @@
 If you discover a security vulnerability, please report it privately:
 
 - **Email:** thales.mms (at) proton.me
-- **Signal/Telegram:** available on request
+- **Encrypted channel for sensitive details:** Signal is preferred; Telegram secret chat is available
+  if needed. Send a brief email requesting an encrypted channel and include only non-sensitive contact
+  details in that initial email.
+
+Do not send proof-of-concept data, patient information, screenshots, logs, or sensitive attachments in
+plain email. If you need to use encrypted email, request a PGP/GPG public key and fingerprint first,
+then encrypt sensitive attachments with that key before sending them.
 
 In your report, include:
 

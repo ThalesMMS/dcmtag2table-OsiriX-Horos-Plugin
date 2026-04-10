@@ -47,9 +47,12 @@ Open Horos/OsiriX Console (inside the app) to view plugin logs after running `dc
 
 ### PHI and Privacy
 
-This plugin exports DICOM metadata only. It does **not** export image pixels or PHI by default.
+This plugin exports DICOM metadata, which may contain sensitive information. Image pixels and PHI can
+also be present depending on configuration, selected tags, source data, and downstream processing.
+De-identify or remove PHI before sharing CSV exports or indexes.
+
 If you use the inverted-index script on real patient data, ensure you comply with local regulations
-and institutional policies. Do **not** share CSV exports or indexes on public repositories.
+and institutional policies. Never publish CSV exports or indexes without confirmed de-identification.
 
 ## Getting Help
 
