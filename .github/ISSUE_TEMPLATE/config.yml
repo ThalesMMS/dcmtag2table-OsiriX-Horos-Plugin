@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Support & FAQ
+    url: https://github.com/ThalesMMS/dcmtag2table-OsiriX-Horos-Plugin/blob/main/SUPPORT.md
+    about: Installation, usage, and troubleshooting help
+  - name: Security Vulnerability
+    url: https://github.com/ThalesMMS/dcmtag2table-OsiriX-Horos-Plugin/blob/main/SECURITY.md
+    about: Report security issues privately

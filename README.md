@@ -123,6 +123,21 @@ Apache 2.0. See `LICENSE`.
 
 ---
 
+## Community & Support
+
+- **[SUPPORT.md](SUPPORT.md)** — Installation, usage, and troubleshooting FAQs
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** — How to contribute and build from source
+- **[SECURITY.md](SECURITY.md)** — How to report security issues privately
+- **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)** — Code of conduct for this project
+- **Bug Reports**: [Bug Report Template](.github/ISSUE_TEMPLATE/bug_report.yml)
+- **Feature Requests**: [Feature Request Template](.github/ISSUE_TEMPLATE/feature_request.yml)
+
+> **PHI Note:** This plugin exports DICOM metadata only. Do not commit patient data
+> or CSV exports to public repos. Ensure compliance with local regulations and
+> institutional policies when using real patient data.
+
+---
+
 ## Inverted Index Script (Post-processing)
 
 This repo includes a helper script to build inverted indexes from a CSV exported
