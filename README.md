@@ -6,20 +6,22 @@ The core DICOM metadata extraction and processing logic of this plugin is powere
 
 ---
 
-## Downloads
+## Release Status
 
-Pre-built plugins are available in the `Releases/` folder:
+This repository is currently **prerelease-only**.
+There are no published GitHub Releases yet, and the `Releases/` directory may be empty between packaging runs.
 
-| Platform | Download |
-|----------|----------|
-| **Horos** | `Releases/Horos/dcmtag2tableHorosPlugin.osirixplugin.zip` |
-| **OsiriX** | `Releases/OsiriX/dcmtag2tableHorosPlugin.osirixplugin.zip` |
+For now:
+- build from source using the steps below, or
+- use packaged `.zip` artifacts only when they are present in a prerelease or checked into `Releases/`
+
+See [RELEASE.md](RELEASE.md) for the packaging checklist, versioning plan, and the gating criteria for the first stable release.
 
 ---
 
 ## Installation
 
-1. Download the appropriate `.zip` file for your platform
+1. Obtain the appropriate `.zip` for your platform from a prerelease or from `Releases/<Platform>/` when present
 2. Unzip to get `dcmtag2tableHorosPlugin.osirixplugin`
 3. Copy to the plugins folder:
    - **Horos:** `~/Library/Application Support/Horos/Plugins/`
@@ -122,6 +124,12 @@ Releases/
 Apache 2.0. See `LICENSE`.
 
 ---
+
+## Versioning & Changelog
+
+Until the project has repeatable packaging and install validation for both Horos and OsiriX, use `0.y.z` pre-1.0 versions such as `v0.1.0` or `v0.1.0-rc.1`.
+
+Track user-facing changes in [CHANGELOG.md](CHANGELOG.md). GitHub auto-generated release notes are enabled via [`.github/release.yml`](.github/release.yml).
 
 ## Community & Support
 
